@@ -1,3 +1,4 @@
+import CategoryList from "@/components/CategoryList";
 import Header from "@/components/Header";
 import Image from "next/image";
 
@@ -17,6 +18,9 @@ export default function Home() {
           className="h-auto w-full rounded-md object-contain"
         />
       </div>
+
+      {/* Category List */}
+      <CategoryList />
     </>
   );
 }
