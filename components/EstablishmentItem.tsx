@@ -10,7 +10,7 @@ export default function EstablishmentItem({
   establishment,
 }: EstablishmentProps) {
   return (
-    <Card className="min-w-[200px]">
+    <Card className="min-w-[200px] md:min-w-[300px]">
       <CardContent className="p-0 px-1 pt-1">
         <div className="relative h-[200px] w-full">
           <Image
