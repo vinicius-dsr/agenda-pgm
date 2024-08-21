@@ -1,4 +1,5 @@
 import CategoryList from "@/components/CategoryList";
+import EstablishmentList from "@/components/EstablishmentList";
 import Header from "@/components/Header";
 import Image from "next/image";
 
@@ -21,6 +22,9 @@ export default function Home() {
 
       {/* Category List */}
       <CategoryList />
+
+      {/* Establishment List */}
+      <EstablishmentList />
     </>
   );
 }

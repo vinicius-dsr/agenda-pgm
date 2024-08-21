@@ -19,7 +19,7 @@ model Establishment {
   name                  String
   description           String
   operation             String
-  imageUrl              String[]
+  imageUrl              String
   address               String
   phones                String[]
   categories            Category[]              @relation("EstablishmentCategories")

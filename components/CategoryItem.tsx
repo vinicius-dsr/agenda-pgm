@@ -9,7 +9,7 @@ interface CategoryItemProps {
 export default function CategoryItem({ category }: CategoryItemProps) {
   return (
     <>
-      <Button variant="outline" className="border-[#ccc} py-6">
+      <Button variant="outline" className="border-[#ccc} shadow-sm">
         {category.name}
       </Button>
     </>
