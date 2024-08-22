@@ -23,7 +23,7 @@ export default function Home() {
       </div>
 
       {/* Category List */}
-      <div className="mx-auto max-w-screen-xl">
+      <div className="mx-auto block max-w-screen-xl md:hidden">
         <CategoryList />
       </div>
 

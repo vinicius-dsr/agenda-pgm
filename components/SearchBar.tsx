@@ -8,7 +8,7 @@ export default function SearchBar() {
     <div className="flex w-full items-center">
       <Input
         placeholder="Pesquisar estabelecimento..."
-        className="py-[1.4rem]"
+        className="py-[1.4rem] md:py-4"
       />
       <Button variant="ghost" className="-ml-14">
         <Search />

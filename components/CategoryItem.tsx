@@ -1,5 +1,4 @@
 import { Category } from "@prisma/client";
-import Link from "next/link";
 import { Button } from "./ui/button";
 
 interface CategoryItemProps {
