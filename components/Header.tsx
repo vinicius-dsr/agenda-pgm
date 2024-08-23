@@ -25,7 +25,7 @@ export default function Header() {
           </Link>
           <SearchBar />
           <Link
-            href=""
+            href="/categories"
             className={cn(
               buttonVariants({ variant: "ghost" }),
               "flex items-center gap-2 text-white",

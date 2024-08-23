@@ -1,9 +1,9 @@
-import { Establishment } from "@prisma/client";
-import { Card, CardContent } from "./ui/card";
-import Image from "next/image";
-import { Button, buttonVariants } from "./ui/button";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { Establishment } from "@prisma/client";
+import Image from "next/image";
+import Link from "next/link";
+import { buttonVariants } from "./ui/button";
+import { Card, CardContent } from "./ui/card";
 
 interface EstablishmentProps {
   establishment: Establishment;

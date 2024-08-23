@@ -1,7 +1,8 @@
 import { db } from "@/lib/prisma";
 import CategoryItem from "./CategoryItem";
-import { Button } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
 import { ArrowRightIcon } from "lucide-react";
+import Link from "next/link";
 
 export default async function CategoryList() {
   const category = await db.category.findMany({
@@ -17,9 +18,12 @@ export default async function CategoryList() {
       {category.map((category) => (
         <CategoryItem key={category.id} category={category} />
       ))}
-      <Button variant="secondary">
+      <Link
+        href="/categories"
+        className={buttonVariants({ variant: "secondary" })}
+      >
         Ver todos <ArrowRightIcon size={13} className="ml-2" />
-      </Button>
+      </Link>
     </div>
   );
 }

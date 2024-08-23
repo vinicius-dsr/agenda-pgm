@@ -1,7 +1,6 @@
 import CategoryList from "@/components/CategoryList";
 import EstablishmentList from "@/components/EstablishmentList";
 import Header from "@/components/Header";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,8 +15,8 @@ export default function Home() {
         <Image
           src="/Banner.png"
           alt=""
-          width={500}
-          height={500}
+          width={800}
+          height={800}
           className="h-auto w-full rounded-md object-contain"
         />
       </div>
