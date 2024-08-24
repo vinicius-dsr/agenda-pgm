@@ -11,6 +11,7 @@ model Category {
   id                    String                  @id @default(uuid())
   name                  String                  @unique
   icon                  String
+  slug                  String                  @unique
   establishments        Establishment[]         @relation("EstablishmentCategories")
   EstablishmentCategory EstablishmentCategory[]
 }
@@ -18,6 +19,7 @@ model Category {
 model Establishment {
   id                    String                  @id @default(uuid())
   name                  String
+  slug                  String                  @unique
   description           String
   operation             String
   imageUrl              String

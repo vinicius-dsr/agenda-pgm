@@ -28,7 +28,7 @@ export default function EstablishmentItem({
           </h3>
           <p className="truncate text-sm">{establishment.address}</p>
           <Link
-            href={`/establishment/${establishment.id}`}
+            href={`/establishment/${establishment.slug}`}
             className={cn(
               buttonVariants({ variant: "secondary" }),
               "mt-3 w-full",

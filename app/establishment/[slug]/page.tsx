@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 
 interface EstablishmentProps {
   params: {
-    id: string;
+    slug: string;
   };
 }
 
@@ -14,7 +14,7 @@ export default async function EstablishmentPage({
 }: EstablishmentProps) {
   const establishment = await db.establishment.findUnique({
     where: {
-      id: params.id,
+      slug: params.slug,
     },
   });
   if (!establishment) {

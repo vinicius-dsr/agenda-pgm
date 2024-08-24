@@ -8,90 +8,112 @@ async function main() {
     {
       icon: "https://utfs.io/f/9f67ea8a-7c99-4b97-b11c-baae6e7a6425-k9ls7l.png",
       name: "Eletrônicos e Celulares",
+      slug: "eletronicos-e-celulares",
     },
     {
       icon: "https://utfs.io/f/c3cc72bd-bdd5-4c14-a6c0-7445dcc16530-wgvf4e.png",
       name: "Estética",
+      slug: "estetica",
     },
     {
       icon: "https://utfs.io/f/75bedd9b-e381-4632-8c25-2a22e3810ae2-x9vb8h.png",
       name: "Bares e Restaurantes",
+      slug: "bares-e-restaurantes",
     },
     {
       icon: "https://utfs.io/f/5be8ccdc-cf56-4d2c-8094-7f718bebdaa5-7xyhxg.png",
       name: "Vestuário",
+      slug: "vestuario",
     },
     {
       icon: "https://utfs.io/f/5d30d203-41d1-4ffa-a9d4-1e4afd869241-mpmqcr.png",
       name: "Eletrodoméstico",
+      slug: "eletrodomesticos",
     },
     {
       icon: "https://utfs.io/f/e28db139-68f7-4665-9122-9bd32db1d2b8-pel5rc.png",
       name: "Supermercado",
+      slug: "supermercado",
     },
     {
       icon: "https://utfs.io/f/27894451-394b-48fa-a85c-b765852c47c7-1p6as2.png",
       name: "Lazer",
+      slug: "lazer",
     },
     {
       icon: "https://utfs.io/f/af6619c1-c1cd-4f45-a7da-710bc5b06bfc-q2qslw.png",
       name: "Sorveteria",
+      slug: "sorveteria",
     },
     {
       icon: "https://utfs.io/f/97e280c7-77f1-446e-b8f3-4ac87a76d427-b6twff.png",
       name: "Petshop",
+      slug: "petshop",
     },
     {
       icon: "https://utfs.io/f/0c703394-84b2-41cb-b03d-c65db74ccd7f-x2onlt.png",
       name: "Clínicas e Hospitais",
+      slug: "clinicas-e-hospitais",
     },
     {
       icon: "https://utfs.io/f/c2e4ef44-661f-4e1c-9d46-c01246664fa4-o5467g.png",
       name: "Fotografia",
+      slug: "fotografia",
     },
     {
       icon: "https://utfs.io/f/07681b97-ab46-4c28-a808-6eec94424aea-4ueemn.png",
       name: "Papelaria",
+      slug: "papelaria",
     },
     {
       icon: "https://utfs.io/f/61c931af-359b-4554-bffe-a23c75343e89-16s69l.png",
       name: "Assistência Técnica",
+      slug: "assistencia-tecnica",
     },
     {
       icon: "https://utfs.io/f/419b8e7c-371f-4f06-bd98-4462b5d203a7-ykad51.png",
       name: "Academia",
+      slug: "academia",
     },
     {
       icon: "https://utfs.io/f/357611f0-9a0b-4684-ac14-16871b38090f-5vxsjd.png",
       name: "Órgãos Públicos",
+      slug: "orgaos-publicos",
     },
     {
       icon: "https://utfs.io/f/63a9863c-0ad0-4046-9a93-9c53ed18dca1-1r5gn6.png",
       name: "Ótica",
+      slug: "otica",
     },
     {
       icon: "https://utfs.io/f/999919c3-654e-4c3b-b014-9479a0af05bd-pibii0.png",
       name: "Materiais de Construção",
+      slug: "materiais-de-construcao",
     },
     {
       icon: "https://utfs.io/f/99122811-a228-410e-b9e3-3ec6bd6d4ad3-npdlat.png",
       name: "Provedor de Internet",
+      slug: "provedor-de-internet",
     },
     {
       icon: "https://utfs.io/f/6c3ea871-ad68-49e4-b89e-cd0061a3e213-lpa9bq.png",
       name: "Floricultura",
+      slug: "floricultura",
     },
     {
       icon: "https://utfs.io/f/bcf05b94-8380-40e2-b654-8bd752607243-e1d63.png",
       name: "Funilaria",
+      slug: "funilaria",
     },
     {
       icon: "https://utfs.io/f/e0241ad4-cf99-4368-94ea-5b54b614c216-1eucuj.png",
       name: "Funerária",
+      slug: "funeraria",
     },
     {
       icon: "https://utfs.io/f/6aee46cf-80a5-4847-9f32-47571ccc4f28-pkihv9.png",
       name: "Oficina",
+      slug: "oficina",
     },
   ];
 
@@ -107,6 +129,7 @@ async function main() {
     // Hospital Municipal
     {
       name: "Hospital Municipal Paragominas",
+      slug: "hospital-municipal",
       description:
         "Hospital que oferece atendimento de consultas e exames, além de maternidade.",
       operation: "24h",
@@ -125,6 +148,7 @@ async function main() {
     // UPA
     {
       name: "UPA 24h Paragominas",
+      slug: "upa-paragominas",
       description:
         "Implantada em 25 de janeiro de 2016, a Unidade de Pronto Atendimento (UPA) de Paragominas vem sendo um dos pilares da saúde no município, trazendo cada vez mais melhorias e eficácia no atendimento de seus pacientes.",
       operation: "24h",
@@ -143,6 +167,7 @@ async function main() {
     // Regional
     {
       name: "Hospital Regional Público do Leste do Pará",
+      slug: "hospital-regional",
       description:
         "O Hospital Regional Público do Leste de Paragominas o atendimento de Emergência e Ambulatorial ocorre de forma referenciada, encaminhada ao Hospital por meio da regulação Estadual, SAMU, Corpo de Bombeiro e Polícia Rodoviária, Militar ou outro processo regulatório definido pela SESPA.",
       operation: "24h",
@@ -161,6 +186,7 @@ async function main() {
     // HGP
     {
       name: "HGP - Hospital Geral de Paragominas",
+      slug: "hospital-geral-de-paragominas",
       description:
         "Hospital Geral de Paragominas · Um hospital que dá e salva vidas! · Uma instituição multidisciplinar que oferece o mais alto nivel de atendimento médico.",
       operation: "24h",
@@ -179,6 +205,7 @@ async function main() {
     // Caps II
     {
       name: "Caps II",
+      slug: "caps-2",
       description:
         "Atende prioritariamente pessoas em intenso sofrimento psíquico decorrente de problemas mentais graves e persistentes, incluindo aqueles relacionados ao uso decorrente de álcool e outras drogas, e outras situações clínicas que impossibilitem estabelecer laços sociais e realizar projetos de vida.",
       operation: "08:00 - 18:00",

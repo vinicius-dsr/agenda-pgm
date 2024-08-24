@@ -32,7 +32,7 @@ export default function Home() {
         <div className="mb-4 flex items-center justify-between px-4 md:px-0">
           <h2 className="text-base font-medium md:text-lg">Órgãos públicos</h2>
           <Link
-            href=""
+            href="/categories/orgaos-publicos"
             className="text-sm text-muted-foreground transition-all hover:text-black hover:underline"
           >
             Ver tudo
