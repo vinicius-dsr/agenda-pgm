@@ -1,5 +1,6 @@
 import { Category } from "@prisma/client";
-import { Button } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
+import Link from "next/link";
 
 interface CategoryItemProps {
   category: Category;
@@ -8,9 +9,12 @@ interface CategoryItemProps {
 export default function CategoryItem({ category }: CategoryItemProps) {
   return (
     <>
-      <Button variant="outline" className="">
+      <Link
+        href={`/categories/${category.slug}`}
+        className={buttonVariants({ variant: "outline" })}
+      >
         {category.name}
-      </Button>
+      </Link>
     </>
   );
 }

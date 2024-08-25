@@ -1,6 +1,7 @@
 import EstablishmentItem from "@/components/EstablishmentItem";
 import Header from "@/components/Header";
 import { db } from "@/lib/prisma";
+import { Frown } from "lucide-react";
 import { notFound } from "next/navigation";
 
 interface CategoryProps {
@@ -32,14 +33,27 @@ export default async function CategoryPage({
         <h1 className="py-2 text-center text-xl font-medium md:py-4 md:text-2xl">
           {category?.name}
         </h1>
-        <div className="grid grid-cols-1 gap-5 py-6 md:grid-cols-3 md:gap-4">
-          {category?.establishments.map((establishment) => (
-            <EstablishmentItem
-              key={establishment.id}
-              establishment={establishment}
-            />
-          ))}
-        </div>
+        {category.establishments.length === 0 ? (
+          <div className="align-center flex justify-center py-36">
+            <div className="flex flex-col items-center gap-4">
+              <span className="text-muted-foreground">
+                <Frown size={53} />
+              </span>
+              <h1 className="text-xl font-medium uppercase text-muted-foreground md:text-2xl">
+                Ainda não há estabelecimentos...
+              </h1>
+            </div>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 gap-5 py-6 md:grid-cols-3 md:gap-4">
+            {category?.establishments.map((establishment) => (
+              <EstablishmentItem
+                key={establishment.id}
+                establishment={establishment}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </>
   );
