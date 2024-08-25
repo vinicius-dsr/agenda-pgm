@@ -1,6 +1,7 @@
 import EstablishmentItem from "@/components/EstablishmentItem";
 import Header from "@/components/Header";
 import { db } from "@/lib/prisma";
+import { notFound } from "next/navigation";
 
 interface CategoryProps {
   params: {
@@ -19,6 +20,10 @@ export default async function CategoryPage({
       establishments: true,
     },
   });
+
+  if (!category) {
+    return notFound();
+  }
 
   return (
     <>

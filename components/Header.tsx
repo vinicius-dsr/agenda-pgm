@@ -19,7 +19,7 @@ export default function Header() {
     <header className="sticky top-0 z-10 mx-auto w-full bg-primary py-4 shadow-md md:py-6">
       <div className="mx-auto max-w-screen-xl px-4 md:px-0">
         {/* header desktop */}
-        <div className="hidden items-center justify-between gap-4 md:flex">
+        <div className="hidden justify-between gap-4 md:flex">
           <Link href="/">
             <Image src="/logo.png" alt="logo" width={200} height={150} />
           </Link>

@@ -25,9 +25,15 @@ export default async function EstablishmentPage({
       <div className="hidden md:block">
         <Header />
       </div>
-      <div className="">
-        <div className="relative mx-auto h-[300px] w-full">
-          <Image src={establishment?.imageUrl} alt={establishment?.name} fill />
+      <div className="mx-auto max-w-screen-xl px-4 py-6 md:px-0">
+        {/* Image */}
+        <div className="relative h-[350px] w-full">
+          <Image
+            src={establishment.imageUrl}
+            fill
+            alt={establishment.name}
+            className="object-contain"
+          />
         </div>
       </div>
     </>
