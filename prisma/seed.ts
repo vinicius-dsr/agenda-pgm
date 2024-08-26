@@ -118,9 +118,16 @@ async function main() {
   ];
 
   // Criar categorias no banco de dados
+  // for (const category of categories) {
+  //   await prisma.category.create({
+  //     data: category,
+  //   });
+  // }
   for (const category of categories) {
-    await prisma.category.create({
-      data: category,
+    await prisma.category.upsert({
+      where: { name: category.name },
+      update: {},
+      create: category,
     });
   }
 
@@ -136,6 +143,7 @@ async function main() {
       imageUrl:
         "https://utfs.io/f/30209b9d-e8d1-48a3-ac96-74a020a7366c-5r0hr5.jpg",
       address: "Av. Pres. Vargas, 345 - Centro",
+      mapsUrl: ["https://maps.app.goo.gl/gspkU7aTwnhV9gvB7"],
       phones: ["(91) 3729-3758"],
       categories: {
         connect: [
@@ -155,6 +163,7 @@ async function main() {
       imageUrl:
         "https://utfs.io/f/a3bd78c3-44fa-419e-9715-21af926db282-x6dpf9.jpg",
       address: "Av. Manoel Dias Corrêa, s/n - Uraim II",
+      mapsUrl: ["https://maps.app.goo.gl/Vvi2H6GwRiVLeNe69"],
       phones: ["(91) 3729-8058"],
       categories: {
         connect: [
@@ -174,6 +183,7 @@ async function main() {
       imageUrl:
         "https://utfs.io/f/771140a2-d072-4086-b00a-b0cb93ff1d24-vst2z6.jpg",
       address: "Rua Adelaide Bernardes, S/N - Bairro Nova Conquista",
+      mapsUrl: ["https://maps.app.goo.gl/kg9NQd71xY1GxCXX8"],
       phones: ["(91) 3739-1046"],
       categories: {
         connect: [
@@ -193,7 +203,8 @@ async function main() {
       imageUrl:
         "https://utfs.io/f/6378cbbd-c367-4dce-bf27-e6b29d2dba77-1j5d.jpeg",
       address: "R. Santa Terezinha, 304 - Centro",
-      phones: ["(91) 3729-3567"],
+      mapsUrl: ["https://maps.app.goo.gl/gn9Hzz2aoJ9A1Y2E7"],
+      phones: ["(91) 9100-0303", "(91) 3729-3567"],
       categories: {
         connect: [
           { name: "Órgãos Públicos" },
@@ -212,6 +223,7 @@ async function main() {
       imageUrl:
         "https://utfs.io/f/f6fcaeb9-4415-4b5d-ac8b-bf50013dedff-mm9gzj.jpg",
       address: "R. Arlindo Batista, 130 - Promissão III",
+      mapsUrl: ["https://maps.app.goo.gl/Ktrrtp5Rkitr7xHN8"],
       phones: ["(91) 98487-4984"],
       categories: {
         connect: [{ name: "Órgãos Públicos" }],
@@ -220,9 +232,16 @@ async function main() {
   ];
 
   // Criar estabelecimentos no banco de dados
+  // for (const establishment of establishments) {
+  //   await prisma.establishment.create({
+  //     data: establishment,
+  //   });
+  // }
   for (const establishment of establishments) {
-    await prisma.establishment.create({
-      data: establishment,
+    await prisma.establishment.upsert({
+      where: { slug: establishment.slug },
+      update: {},
+      create: establishment,
     });
   }
 

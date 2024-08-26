@@ -37,7 +37,7 @@ export default function SearchBar() {
             <FormItem className="w-full">
               <FormControl>
                 <Input
-                  placeholder="Faça sua busca..."
+                  placeholder="Buscar estabelecimento..."
                   {...field}
                   className="w-full"
                 />
@@ -46,7 +46,10 @@ export default function SearchBar() {
             </FormItem>
           )}
         />
-        <Button variant="ghost" className="-ml-14">
+        <Button
+          variant="ghost"
+          className="-ml-14 text-primary hover:bg-transparent hover:text-primary/80"
+        >
           <Search />
         </Button>
       </form>

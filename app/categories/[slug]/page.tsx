@@ -30,11 +30,11 @@ export default async function CategoryPage({
     <>
       <Header />
       <div className="mx-auto flex max-w-screen-xl flex-col gap-4 px-4 py-6 md:px-0">
-        <h1 className="py-2 text-center text-xl font-medium md:py-4 md:text-2xl">
+        <h1 className="py-2 text-center text-xl font-medium text-primary md:py-4 md:text-2xl">
           {category?.name}
         </h1>
         {category.establishments.length === 0 ? (
-          <div className="align-center flex justify-center py-36">
+          <div className="align-center flex justify-center py-32 md:py-32">
             <div className="flex flex-col items-center gap-4">
               <span className="text-muted-foreground">
                 <Frown size={53} />

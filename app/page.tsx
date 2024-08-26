@@ -13,7 +13,7 @@ export default function Home() {
       {/* Banner */}
       <div className="mx-auto max-w-screen-xl px-4 py-4 md:px-0 md:py-6">
         <Image
-          src="/Banner.png"
+          src="/banner.png"
           alt=""
           width={800}
           height={800}

@@ -20,7 +20,7 @@ export default function Header() {
       <div className="mx-auto max-w-screen-xl px-4 md:px-0">
         {/* header desktop */}
         <div className="hidden justify-between gap-4 md:flex">
-          <Link href="/">
+          <Link href="/" className="mr-2">
             <Image src="/logo.png" alt="logo" width={200} height={150} />
           </Link>
           <SearchBar />
