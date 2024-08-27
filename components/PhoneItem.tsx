@@ -31,7 +31,7 @@ export default function PhoneItem({ phone }: PhoneItemProps) {
       </div>
       <div className="flex items-center gap-2 py-1">
         <Button
-          variant="outline"
+          variant="secondary"
           size="sm"
           onClick={() => handlerCopyClick(phone)}
         >
@@ -40,7 +40,7 @@ export default function PhoneItem({ phone }: PhoneItemProps) {
         <Link
           href={`https://wa.me/55${formatPhoneNumber(phone)}?text=Ol%C3%A1,%20vim%20pela%20Agenda%20Paragominas`}
           target="_blank"
-          className={buttonVariants({ variant: "outline", size: "sm" })}
+          className={buttonVariants({ variant: "secondary", size: "sm" })}
         >
           <FaWhatsapp />
         </Link>

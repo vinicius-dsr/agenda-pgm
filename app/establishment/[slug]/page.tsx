@@ -45,7 +45,7 @@ export default async function EstablishmentPage({
                 {establishment.name}
               </h2>
 
-              <span className="mr-1 hidden items-center gap-2 text-lg font-medium md:flex">
+              <span className="mr-1 hidden items-center gap-2 font-medium md:flex">
                 <Clock size={18} /> {establishment.operation}
               </span>
             </div>
@@ -60,7 +60,7 @@ export default async function EstablishmentPage({
           <div className="py-4">
             <p className="text-primary/80">{establishment.description}</p>
           </div>
-          <hr />
+          <hr className="block md:hidden" />
         </div>
 
         <div className="flex w-auto flex-col gap-4 md:min-w-[30%] md:max-w-[30%]">
@@ -74,7 +74,7 @@ export default async function EstablishmentPage({
                     href={local}
                     target="_blank"
                     className={cn(
-                      buttonVariants({ variant: "outline" }),
+                      buttonVariants({ variant: "secondary" }),
                       "w-full",
                     )}
                   >
