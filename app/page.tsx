@@ -1,3 +1,4 @@
+import Banner from "@/components/Banner";
 import CategoryList from "@/components/CategoryList";
 import EstablishmentList from "@/components/EstablishmentList";
 import Header from "@/components/Header";
@@ -10,7 +11,7 @@ export default function Home() {
       {/* Header */}
       <Header />
 
-      {/* Banner */}
+      {/* Banner
       <div className="mx-auto max-w-screen-xl px-4 py-4 md:px-0 md:py-6">
         <Image
           src="/banner.png"
@@ -19,6 +20,9 @@ export default function Home() {
           height={800}
           className="h-auto w-full rounded-md object-contain"
         />
+      </div> */}
+      <div className="mx-auto max-w-screen-xl px-4 py-4 md:px-0 md:py-6">
+        <Banner />
       </div>
 
       {/* Category List */}
