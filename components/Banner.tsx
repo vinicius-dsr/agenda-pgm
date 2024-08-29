@@ -32,8 +32,6 @@ const bannerImage = [
   },
 ];
 
-const handleRedirectClick = {};
-
 export default function Banner() {
   const plugin = React.useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true }),

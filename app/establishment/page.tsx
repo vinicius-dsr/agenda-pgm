@@ -22,7 +22,7 @@ export default async function EstablishSearchPage({
   return (
     <>
       <Header />
-      <div className="ga-4 mx-auto flex max-w-screen-xl flex-col px-4 py-6 md:px-0">
+      <div className="ga-4 mx-auto mb-6 flex max-w-screen-xl flex-col px-4 py-6 md:px-0">
         <h2 className="text-lg">
           Resultados para &quot;{searchParams.search}&quot;
         </h2>

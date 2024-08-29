@@ -32,7 +32,7 @@ export default function Home() {
 
       {/* Establishment List */}
 
-      <div className="mx-auto max-w-screen-xl py-6">
+      <div className="mx-auto mb-8 max-w-screen-xl py-6">
         <div className="mb-4 flex items-center justify-between px-4 md:px-0">
           <h2 className="text-base font-medium md:text-lg">Órgãos públicos</h2>
           <Link

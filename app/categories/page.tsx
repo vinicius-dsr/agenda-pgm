@@ -16,7 +16,7 @@ export default async function CategoriesPage() {
     <>
       <Header />
       <div className="mx-auto max-w-screen-lg px-4 py-6 md:px-0">
-        <h2 className="py-2 text-center text-xl font-medium md:py-4 md:text-2xl">
+        <h2 className="mb-8 py-2 text-center text-xl font-medium md:py-4 md:text-2xl">
           Categorias
         </h2>
         <div className="grid grid-cols-1 gap-4 py-6 md:grid-cols-3">
