@@ -4,10 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import SearchBar from "./SearchBar";
 import { Button, buttonVariants } from "./ui/button";
-import { LayoutList, Menu, Search, X } from "lucide-react";
+import { Home, LayoutList, Menu, Search, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
+import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./ui/sheet";
+import MobileNav from "./MobileNav";
 
 export default function Header() {
   const [showSearchBar, setShowSearchBar] = useState(false);
@@ -35,7 +37,8 @@ export default function Header() {
             <span>Categorias</span>
           </Link>
           <Link
-            href=""
+            href="https://wa.me/5591992761377?text=Ol%C3%A1,%20vim%20pela%20Agenda%20Paragominas"
+            target="_blank"
             className={cn(
               buttonVariants({ variant: "ghost" }),
               "flex items-center gap-2 text-white",
@@ -60,12 +63,7 @@ export default function Header() {
               >
                 {showSearchBar ? <X size={26} /> : <Search size={26} />}
               </Button>
-              <Button
-                variant="ghost"
-                className="px-0 text-white hover:bg-transparent hover:text-white"
-              >
-                <Menu size={26} />
-              </Button>
+              <MobileNav />
             </div>
           </div>
           {showSearchBar && <SearchBar />}

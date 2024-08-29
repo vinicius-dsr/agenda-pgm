@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default async function CategoryList() {
   const category = await db.category.findMany({
-    take: 10,
+    take: 5,
     orderBy: [
       {
         name: "asc",

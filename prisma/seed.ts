@@ -115,6 +115,11 @@ async function main() {
       name: "Oficina",
       slug: "oficina",
     },
+    {
+      icon: "https://utfs.io/f/b41491e5-0c27-4d37-bb62-5d9b4fcdffe5-jxdkrs.png",
+      name: "Recomendados",
+      slug: "recomendados",
+    },
   ];
 
   // Criar categorias no banco de dados
@@ -227,6 +232,21 @@ async function main() {
       phones: ["(91) 98487-4984"],
       categories: {
         connect: [{ name: "Órgãos Públicos" }],
+      },
+    },
+
+    // comment
+    {
+      name: "",
+      slug: "",
+      description: "",
+      operation: "",
+      imageUrl: "",
+      address: "",
+      mapsUrl: [""],
+      phones: [""],
+      categories: {
+        connect: [{ name: "" }],
       },
     },
   ];
