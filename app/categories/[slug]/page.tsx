@@ -1,7 +1,7 @@
 import EstablishmentItem from "@/components/EstablishmentItem";
 import Header from "@/components/Header";
 import { db } from "@/lib/prisma";
-import { Frown } from "lucide-react";
+import { Frown, HeartCrack } from "lucide-react";
 import { notFound } from "next/navigation";
 
 interface CategoryProps {
@@ -33,14 +33,10 @@ export default async function CategoryPage({
           {category?.name}
         </h1>
         {category.establishments.length === 0 ? (
-          <div className="align-center flex justify-center py-48 md:py-32">
-            <div className="flex flex-col items-center gap-4 py-6">
-              <span className="text-muted-foreground">
-                <Frown size={53} />
-              </span>
-              <h1 className="text-xl font-medium uppercase text-muted-foreground md:text-2xl">
-                Ainda não há estabelecimentos...
-              </h1>
+          <div className="flex flex-col items-center gap-4 py-60 md:py-48">
+            <div className="flex flex-col items-center gap-4 text-lg font-medium text-muted-foreground">
+              <HeartCrack size={32} />
+              <span className="">Ainda não há estabelecimentos...</span>
             </div>
           </div>
         ) : (
