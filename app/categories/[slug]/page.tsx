@@ -25,7 +25,6 @@ export default async function CategoryPage({
   if (!category) {
     return notFound();
   }
-
   return (
     <>
       <Header />
