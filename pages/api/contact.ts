@@ -6,9 +6,6 @@ require("dotenv").config();
 const login = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
 
-console.log("EMAIL:", process.env.EMAIL);
-console.log("EMAIL_PASS:", process.env.EMAIL_PASS);
-
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
