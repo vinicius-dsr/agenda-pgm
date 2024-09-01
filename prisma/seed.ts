@@ -235,18 +235,55 @@ async function main() {
       },
     },
 
-    // comment
+    // MP
     {
-      name: "",
-      slug: "",
-      description: "",
-      operation: "",
-      imageUrl: "",
-      address: "",
-      mapsUrl: [""],
-      phones: [""],
+      name: "Ministério Público",
+      slug: "ministerio-publico",
+      description:
+        "O Ministério Público, consoante o art. 127, caput, da Constituição Federal, é instituição permanente, essencial à função jurisdicional do Estado, incumbindo-lhe a defesa da ordem jurídica, do regime democrático e dos interesses sociais e individuais indisponíveis.",
+      operation: "8h - 17h",
+      imageUrl:
+        "https://utfs.io/f/98ecf5c4-1080-4e9e-94f9-6e1c353de478-2oz.jpg",
+      address:
+        "Loteamento Módulo II - R. Antônio de Andrade Barbalho, S/N - Centro",
+      mapsUrl: ["https://maps.app.goo.gl/Gnu7mYPdWTBqxj277"],
+      phones: ["(91) 3729-1783"],
       categories: {
-        connect: [{ name: "" }],
+        connect: [{ name: "Órgãos Públicos" }],
+      },
+    },
+
+    // Prefeitura
+    {
+      name: "Prefeitura Municipal de Paragominas",
+      slug: "prefeitura-municipal-de-paragominas",
+      description:
+        "Em 23 de janeiro de 1961 foi lançada a Pedra Fundamental do futuro município de Paragominas. A fundação da cidade foi diferente das fundações de outros municípios do Pará, que surgiram através da colonização portuguesa, de missões jesuítas ou de forma desordenada à sombra de algum grande projeto. Já Paragominas não, essa cidade que podemos ver hoje foi muito bem planejada pelo seu fundador, Célio Resende de Miranda.",
+      operation: "8h - 17h",
+      imageUrl:
+        "https://utfs.io/f/f415483c-e47a-48c3-a68e-bd4285cc0704-o9to95.jpg",
+      address: "Av. do Contorno, 1212 - Centro",
+      mapsUrl: ["https://maps.app.goo.gl/teqHHvfSo7o3d45i7"],
+      phones: ["(91) 3729-8038"],
+      categories: {
+        connect: [{ name: "Órgãos Públicos" }],
+      },
+    },
+
+    // Prefeitura
+    {
+      name: "Procon",
+      slug: "procon",
+      description:
+        "O Procon é um órgão público de defesa do consumidor que, entre outras funções, recebe reclamações para mediar soluções de conflitos entre consumidor, empresas e prestadores de serviços de forma extrajudicial.",
+      operation: "8h - 14h",
+      imageUrl:
+        "https://utfs.io/f/30e1bf48-b52e-4d8f-9324-cb6a16b0b8ed-r8ngo4.jpg",
+      address: "R. Manoel Barata, n°116 - Bairro Célio Mirandia",
+      mapsUrl: ["https://maps.app.goo.gl/vHTxxEdZQfPEhLF59"],
+      phones: ["(91) 3729-1324"],
+      categories: {
+        connect: [{ name: "Órgãos Públicos" }],
       },
     },
   ];

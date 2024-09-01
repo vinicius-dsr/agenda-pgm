@@ -45,7 +45,7 @@ export default function Header() {
             )}
           >
             <FaWhatsapp size={17} />
-            Vale conosco
+            Fale conosco
           </Link>
         </div>
 
