@@ -55,7 +55,7 @@ export default function SuggestionForm() {
       >
         {/* Nome */}
         <label htmlFor="name">
-          <p className="text-sm">Nome completo</p>
+          <p className="text-sm">Nome (opcional)</p>
         </label>
         <Input
           value={name}
@@ -67,7 +67,7 @@ export default function SuggestionForm() {
         />
 
         <label htmlFor="number">
-          <p className="text-sm">Contato</p>
+          <p className="text-sm">Contato (opcional)</p>
         </label>
         <Input
           value={number}
