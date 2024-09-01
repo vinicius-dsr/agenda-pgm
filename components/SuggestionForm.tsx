@@ -47,7 +47,7 @@ export default function SuggestionForm() {
     }
   };
   return (
-    <div className="mx-auto flex w-full max-w-screen-lg flex-col gap-5 py-10">
+    <div className="mx-auto flex w-full max-w-screen-lg flex-col gap-5 py-14 md:py-10">
       <form
         action="POST"
         onSubmit={onSubmit}
@@ -78,8 +78,9 @@ export default function SuggestionForm() {
           placeholder="Digite aqui um número para contato"
         />
 
-        <label htmlFor="message">
+        <label htmlFor="message" className="flex gap-2">
           <p className="text-sm">Sugestão</p>
+          <span className="text-red-500">*</span>
         </label>
         <Textarea
           required
