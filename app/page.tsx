@@ -8,9 +8,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      {/* Header */}
-      <Header />
-
       {/* Banner
       <div className="mx-auto max-w-screen-xl px-4 py-4 md:px-0 md:py-6">
         <Image

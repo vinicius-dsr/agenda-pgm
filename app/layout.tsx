@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/sonner";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const roboto = Roboto({
@@ -31,6 +32,7 @@ export default function RootLayout({
           roboto.variable,
         )}
       >
+        <Header />
         {children}
         <Analytics />
         <Footer />

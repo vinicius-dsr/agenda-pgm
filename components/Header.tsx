@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SearchBar from "./SearchBar";
 import { Button, buttonVariants } from "./ui/button";
-import { Home, LayoutList, Menu, Search, X } from "lucide-react";
+import { Box, Home, LayoutList, Menu, Search, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
@@ -36,7 +36,18 @@ export default function Header() {
             <LayoutList size={17} />
             <span>Categorias</span>
           </Link>
+
           <Link
+            href="/suggestions"
+            className={cn(
+              buttonVariants({ variant: "ghost" }),
+              "flex items-center gap-2 text-white",
+            )}
+          >
+            <Box size={17} />
+            Caixa de sugestões
+          </Link>
+          {/* <Link
             href="https://wa.me/5591992761377?text=Ol%C3%A1,%20vim%20pela%20Agenda%20Paragominas"
             target="_blank"
             className={cn(
@@ -46,7 +57,7 @@ export default function Header() {
           >
             <FaWhatsapp size={17} />
             Fale conosco
-          </Link>
+          </Link> */}
         </div>
 
         {/* Header mobile */}
