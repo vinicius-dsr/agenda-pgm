@@ -9,7 +9,7 @@ export default function SuggestionsPage() {
         </h2>
         <span className="max-w-[650px] flex-wrap text-center text-base md:text-[20px]">
           Não encontrou o estabelecimento que você estava procurando ou tem
-          alguma diga para melhoramos nosso site ? Nos fale um pouco mais...
+          alguma diga para melhorarmos nosso site ? Nos fale um pouco mais...
         </span>
       </div>
       <SuggestionForm />
