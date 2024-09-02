@@ -320,7 +320,7 @@ async function main() {
       mapsUrl: ["https://maps.app.goo.gl/gYGNP6L2iyXUi4uC8"],
       phones: ["(91) 98565-7227"],
       categories: {
-        connect: [{ name: "Distribuidora de Gás" }],
+        connect: [{ name: ["Distribuidora de Gás", "Recomendados"] }],
       },
     },
   ];
