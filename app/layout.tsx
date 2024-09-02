@@ -28,12 +28,12 @@ export default function RootLayout({
     <html lang="pt-br" className="bg-accent">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "flex min-h-screen flex-col bg-background font-sans antialiased",
           roboto.variable,
         )}
       >
         <Header />
-        {children}
+        <main className="flex-grow">{children}</main>
         <Analytics />
         <Footer />
         <Toaster />
