@@ -116,6 +116,26 @@ async function main() {
       slug: "oficina",
     },
     {
+      icon: "https://utfs.io/f/4f02af36-cfe4-40d1-8677-c613f6319907-26s9.png",
+      name: "Distribuidora de Gás",
+      slug: "distribuidora-de-gas",
+    },
+    {
+      icon: "https://utfs.io/f/5c647297-a811-469e-ab2f-32ca119a794e-7qsyww.png",
+      name: "Posto de Gasolina",
+      slug: "posto-de-gasolina",
+    },
+    {
+      icon: "https://utfs.io/f/325b8c74-3b5f-4e9b-a54e-497f8ef0d5dc-1sq40.png",
+      name: "Depósito de bebidas",
+      slug: "deposito-de-bebidas",
+    },
+    {
+      icon: "https://utfs.io/f/140b828d-affa-44dd-911c-f5974a8cd1c0-1n7xro.png",
+      name: "Hotéis e Motéis",
+      slug: "hosteis-e-moteis",
+    },
+    {
       icon: "https://utfs.io/f/b41491e5-0c27-4d37-bb62-5d9b4fcdffe5-jxdkrs.png",
       name: "Recomendados",
       slug: "recomendados",
