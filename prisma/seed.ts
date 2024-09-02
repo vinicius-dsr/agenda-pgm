@@ -261,7 +261,7 @@ async function main() {
       slug: "ministerio-publico",
       description:
         "O Ministério Público, consoante o art. 127, caput, da Constituição Federal, é instituição permanente, essencial à função jurisdicional do Estado, incumbindo-lhe a defesa da ordem jurídica, do regime democrático e dos interesses sociais e individuais indisponíveis.",
-      operation: "8h - 17h",
+      operation: "08h - 17h",
       imageUrl:
         "https://utfs.io/f/98ecf5c4-1080-4e9e-94f9-6e1c353de478-2oz.jpg",
       address:
@@ -279,7 +279,7 @@ async function main() {
       slug: "prefeitura-municipal-de-paragominas",
       description:
         "Em 23 de janeiro de 1961 foi lançada a Pedra Fundamental do futuro município de Paragominas. A fundação da cidade foi diferente das fundações de outros municípios do Pará, que surgiram através da colonização portuguesa, de missões jesuítas ou de forma desordenada à sombra de algum grande projeto. Já Paragominas não, essa cidade que podemos ver hoje foi muito bem planejada pelo seu fundador, Célio Resende de Miranda.",
-      operation: "8h - 17h",
+      operation: "08h - 17h",
       imageUrl:
         "https://utfs.io/f/f415483c-e47a-48c3-a68e-bd4285cc0704-o9to95.jpg",
       address: "Av. do Contorno, 1212 - Centro",
@@ -296,7 +296,7 @@ async function main() {
       slug: "procon",
       description:
         "O Procon é um órgão público de defesa do consumidor que, entre outras funções, recebe reclamações para mediar soluções de conflitos entre consumidor, empresas e prestadores de serviços de forma extrajudicial.",
-      operation: "8h - 14h",
+      operation: "08h - 14h",
       imageUrl:
         "https://utfs.io/f/30e1bf48-b52e-4d8f-9324-cb6a16b0b8ed-r8ngo4.jpg",
       address: "R. Manoel Barata, n°116 - Bairro Célio Mirandia",
@@ -304,6 +304,23 @@ async function main() {
       phones: ["(91) 3729-1324"],
       categories: {
         connect: [{ name: "Órgãos Públicos" }],
+      },
+    },
+
+    // Mega Gás
+    {
+      name: "Mega Gás",
+      slug: "mega-gas",
+      description:
+        "Um time de especialistas preparados, o gás líder no país, a entrega mais rápida e o melhor preço da cidade. Com entrega grátis !",
+      operation: "07h - 20:30h",
+      imageUrl:
+        "https://utfs.io/f/98024fca-79f3-4993-bc71-d5ddecf799b0-dmh8ua.jpg",
+      address: " R. Caramuru, 1B - Jaderlândia",
+      mapsUrl: ["https://maps.app.goo.gl/gYGNP6L2iyXUi4uC8"],
+      phones: ["(91) 98565-7227"],
+      categories: {
+        connect: [{ name: "Distribuidora de Gás" }],
       },
     },
   ];
