@@ -24,7 +24,7 @@ export async function generateMetadata(
   const imageUrl = category?.icon;
   return {
     title: title,
-    description: `Todos os estabelecimentos da categoria ${category.name}`,
+    description: `Todos os estabelecimentos da categoria ${category?.name}`,
     openGraph: {
       images: [imageUrl, ...previousImages],
     },
