@@ -31,7 +31,10 @@ export async function generateMetadata(
     title: title,
     description: desc,
     openGraph: {
-      images: [imageUrl, ...previousImages],
+      images: [
+        ...(imageUrl ? [imageUrl] : []), // Só adiciona imageUrl se não for undefined
+        ...previousImages,
+      ],
     },
   };
 }

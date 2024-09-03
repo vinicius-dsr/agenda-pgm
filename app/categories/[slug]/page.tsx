@@ -26,7 +26,7 @@ export async function generateMetadata(
     title: title,
     description: `Todos os estabelecimentos da categoria ${category?.name}`,
     openGraph: {
-      images: [imageUrl, ...previousImages],
+      images: [...(imageUrl ? [imageUrl] : []), ...previousImages],
     },
   };
 }
