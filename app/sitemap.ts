@@ -1,9 +1,10 @@
+import { db } from "@/lib/prisma";
 import { Category, Establishment } from "@prisma/client";
 import { MetadataRoute } from "next";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const categories = await prisma.category.findMany();
-  const establishments = await prisma.establishment.findMany();
+  const categories = await db.category.findMany();
+  const establishments = await db.establishment.findMany();
 
   const staticRoutes = [
     {
