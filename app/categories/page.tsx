@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import { Card, CardContent } from "@/components/ui/card";
 import { db } from "@/lib/prisma";
 import Image from "next/image";

@@ -1,12 +1,33 @@
 import EstablishmentItem from "@/components/EstablishmentItem";
-import Header from "@/components/Header";
 import { db } from "@/lib/prisma";
-import { Frown, HeartCrack } from "lucide-react";
+import { HeartCrack } from "lucide-react";
+import { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 
 interface CategoryProps {
   params: {
     slug: string;
+  };
+}
+
+export async function generateMetadata(
+  { params }: CategoryProps,
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
+  const category = await db.category.findUnique({
+    where: {
+      slug: params.slug,
+    },
+  });
+  const previousImages = (await parent).openGraph?.images || [];
+  const title = category?.name;
+  const imageUrl = category?.icon;
+  return {
+    title: title,
+    description: `Todos os estabelecimentos da categoria ${category.name}`,
+    openGraph: {
+      images: [imageUrl, ...previousImages],
+    },
   };
 }
 

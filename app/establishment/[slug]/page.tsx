@@ -1,10 +1,9 @@
-import Header from "@/components/Header";
 import PhoneItem from "@/components/PhoneItem";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { buttonVariants } from "@/components/ui/button";
 import { db } from "@/lib/prisma";
 import { cn } from "@/lib/utils";
 import { Clock, MapPin } from "lucide-react";
+import { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -12,6 +11,28 @@ import { notFound } from "next/navigation";
 interface EstablishmentProps {
   params: {
     slug: string;
+  };
+}
+
+export async function generateMetadata(
+  { params }: EstablishmentProps,
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
+  const establishment = await db.establishment.findUnique({
+    where: {
+      slug: params.slug,
+    },
+  });
+  const previousImages = (await parent).openGraph?.images || [];
+  const title = establishment?.name;
+  const desc = establishment?.description;
+  const imageUrl = establishment?.imageUrl;
+  return {
+    title: title,
+    description: desc,
+    openGraph: {
+      images: [imageUrl, ...previousImages],
+    },
   };
 }
 

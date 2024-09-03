@@ -17,6 +17,34 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Agenda Paragominas",
   description: "Todos os empreendimentos da cidade em um só lugar !",
+  keywords: [
+    "Agenda Paragominas",
+    "Estabelecimentos em Paragominas",
+    "paragominas",
+    "Bares",
+    "Academia",
+    "Perto de mim",
+  ],
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+    },
+  },
+
+  openGraph: {
+    title: "Agenda Paragominas",
+    description: "Todos os empreendimentos da cidade em um só lugar !",
+    type: "website",
+    locale: "pt_BR",
+    url: "https://agenda-pgm.vercel.app/",
+    images: [],
+  },
 };
 
 export default function RootLayout({
