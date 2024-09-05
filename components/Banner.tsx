@@ -1,7 +1,6 @@
 "use client";
 
 import Autoplay from "embla-carousel-autoplay";
-import Image from "next/image";
 import React from "react";
 import {
   Carousel,
@@ -10,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./ui/carousel";
+import Image from "next/image";
 
 const bannerImage = [
   {
@@ -27,7 +27,7 @@ const bannerImage = [
   {
     name: "banner 3",
     src: "/banner-3.png",
-    href: "/",
+    href: "/categories/recomendados",
     target: "_self",
   },
 ];
