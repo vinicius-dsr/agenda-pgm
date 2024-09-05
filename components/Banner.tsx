@@ -54,7 +54,7 @@ export default function Banner() {
                 src={banner.src}
                 alt={banner.name}
                 fill
-                className="rounded-md object-cover"
+                className="rounded-md object-fill"
               />
             </div>
           </CarouselItem>
