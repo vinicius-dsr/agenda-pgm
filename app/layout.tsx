@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
-import { Inter, Outfit, Roboto } from "next/font/google";
-import "./globals.css";
-import { cn } from "@/lib/utils";
-import { Toaster } from "@/components/ui/sonner";
 import Footer from "@/components/Footer";
-import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/Header";
+import { Toaster } from "@/components/ui/sonner";
+import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 

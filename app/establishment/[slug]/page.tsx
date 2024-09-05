@@ -5,7 +5,6 @@ import { db } from "@/lib/prisma";
 import { cn } from "@/lib/utils";
 import { Clock, MapPin } from "lucide-react";
 import { Metadata, ResolvingMetadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
