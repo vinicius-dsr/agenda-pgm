@@ -4,6 +4,13 @@ import EstablishmentItem from "./EstablishmentItem";
 export default async function EstablishmentList() {
   const establishment = await db.establishment.findMany({
     take: 6,
+    where: {
+      categories: {
+        some: {
+          name: "Órgãos Públicos",
+        },
+      },
+    },
   });
 
   return (
