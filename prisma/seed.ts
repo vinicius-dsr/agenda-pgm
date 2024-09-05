@@ -316,13 +316,81 @@ async function main() {
       operation: "07h - 20:30h",
       imageUrl:
         "https://utfs.io/f/98024fca-79f3-4993-bc71-d5ddecf799b0-dmh8ua.jpg",
-      address: " R. Caramuru, 1B - Jaderlândia",
+      address: "R. Caramuru, 1B - Jaderlândia",
       mapsUrl: ["https://maps.app.goo.gl/gYGNP6L2iyXUi4uC8"],
       phones: ["(91) 98565-7227"],
       categories: {
         connect: [{ name: "Distribuidora de Gás" }, { name: "Recomendados" }],
       },
     },
+
+    // IBGE
+    {
+      name: "IBGE Paragominas",
+      slug: "ibge-paragominas",
+      description:
+        "O Instituto Brasileiro de Geografia e Estatística - IBGE se constitui no principal provedor de dados e informações do País, que atendem às necessidades dos mais diversos segmentos da sociedade civil, bem como dos órgãos das esferas governamentais federal, estadual e municipal.",
+      operation: "08h - 17h",
+      imageUrl:
+        "https://utfs.io/f/4d7de83e-6f09-4de6-98fa-5f73647f1566-1x4tz.jpg",
+      address: "R. Mal. Rondon, 100 - Bairro Célio Miranda",
+      mapsUrl: ["https://maps.app.goo.gl/mHFH9BSypLt7z1N58"],
+      phones: ["(91) 3202-5601", "(91) 3202-5602"],
+      categories: {
+        connect: [{ name: "Órgãos Públicos" }],
+      },
+    },
+
+    //
+    {
+      name: "Hotel Goytacá",
+      slug: "hotel-goytaca",
+      description:
+        "O Hotel Goytacá está localizado em Paragominas. Este hotel 3 estrelas oferece serviço de quarto e recepção 24 horas. Alguns quartos incluem varanda com vista da cidade.",
+      operation: "24h",
+      imageUrl:
+        "https://utfs.io/f/5f8388ff-b8de-4152-9cc6-3c6935d905cb-4diyd9.jpeg",
+      address: "R. Santa Terezinha, 285 - Centro",
+      mapsUrl: ["https://maps.app.goo.gl/j29gK1KJtoD1fcja8"],
+      phones: ["(91) 98187-2271"],
+      categories: {
+        connect: [{ name: "Hotéis e Motéis" }],
+      },
+    },
+
+    //
+    {
+      name: "Paragominas Palace Hotel",
+      slug: "palace-hotel",
+      description:
+        "Com localização privilegiada e próximo de um dos principais cartões postais de Paragominas, o Lago Verde, o Paragominas Palace Hotel é o primeiro hotel temático da região, cujo tema é “Paragominas: um sonho que ajudamos a construir”. Primando sempre pelo conforto, bem estar e encantamento de seus clientes, o PPH está alçado hoje como um dos melhores hotéis da região.",
+      operation: "24h",
+      imageUrl:
+        "https://utfs.io/f/1a29bdda-60b5-4ad4-8420-87f7277a7adb-rg2wmn.jpg",
+      address: "R. Quinze de Novembro, 83 - Centro",
+      mapsUrl: ["https://maps.app.goo.gl/axKzVnwoWwUuDsTSA"],
+      phones: ["(91) 3729-2132"],
+      categories: {
+        connect: [{ name: "Hotéis e Motéis" }],
+      },
+    },
+
+    // Parque de Exposições
+    // {
+    //   name: "Parque de Exposição de Paragominas - Amilcar Tocantins",
+    //   slug: "parque-de-exposicoes-amilcar-tocantis",
+    //   description:
+    //     "O Instituto Brasileiro de Geografia e Estatística - IBGE se constitui no principal provedor de dados e informações do País, que atendem às necessidades dos mais diversos segmentos da sociedade civil, bem como dos órgãos das esferas governamentais federal, estadual e municipal.",
+    //   operation: "08h - 17h",
+    //   imageUrl:
+    //     "https://utfs.io/f/d9f828c5-df83-4f3a-a31e-49aea762607a-5znpy9.jpeg",
+    //   address: "PA-125, S/N - CX Postal 036 - LT Módulo I - Centro",
+    //   mapsUrl: ["https://maps.app.goo.gl/8P2K78LdibwxBUaf8"],
+    //   phones: ["(91) 3729-5528"],
+    //   categories: {
+    //     connect: [{ name: "Órgãos Públicos" }],
+    //   },
+    // },
   ];
 
   // Criar estabelecimentos no banco de dados
