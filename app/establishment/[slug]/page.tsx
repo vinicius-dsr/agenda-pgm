@@ -1,3 +1,4 @@
+import { EstablishmentImage } from "@/components/EstablishmentImage";
 import PhoneItem from "@/components/PhoneItem";
 import { buttonVariants } from "@/components/ui/button";
 import { db } from "@/lib/prisma";
@@ -31,10 +32,7 @@ export async function generateMetadata(
     title: title,
     description: desc,
     openGraph: {
-      images: [
-        ...(imageUrl ? [imageUrl] : []), // Só adiciona imageUrl se não for undefined
-        ...previousImages,
-      ],
+      images: [...(imageUrl ? [imageUrl] : []), ...previousImages],
     },
   };
 }
@@ -54,12 +52,13 @@ export default async function EstablishmentPage({
     <div className="mx-auto mb-10 flex max-w-screen-xl flex-col gap-6 px-4 py-6 md:flex-row md:px-0 md:py-10">
       <div className="flex min-w-[70%] flex-col gap-4 md:max-w-[70%]">
         <div className="relative h-[350px] w-full px-0">
-          <Image
+          {/* <Image
             src={establishment.imageUrl}
             fill
             alt={establishment.name}
             className="rounded-md object-cover"
-          />
+          /> */}
+          <EstablishmentImage establishment={establishment} />
         </div>
         <div className="py-4">
           <div className="flex items-center justify-between">

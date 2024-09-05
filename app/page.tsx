@@ -1,8 +1,6 @@
 import Banner from "@/components/Banner";
 import CategoryList from "@/components/CategoryList";
 import EstablishmentList from "@/components/EstablishmentList";
-import Header from "@/components/Header";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {

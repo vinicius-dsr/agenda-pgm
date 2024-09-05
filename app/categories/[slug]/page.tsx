@@ -47,7 +47,7 @@ export default async function CategoryPage({
     return notFound();
   }
   return (
-    <div className="mx-auto mb-20 flex h-full max-w-screen-xl flex-col gap-4 px-4 py-6 md:mb-10 md:px-0">
+    <div className="mx-auto flex h-full max-w-screen-xl flex-col gap-4 px-4 py-6 md:mb-20 md:px-0">
       <h1 className="py-2 text-center text-xl font-medium text-primary md:py-4 md:text-2xl">
         {category?.name}
       </h1>
