@@ -140,6 +140,11 @@ async function main() {
       name: "Recomendados",
       slug: "recomendados",
     },
+    {
+      icon: "https://utfs.io/f/519f49fb-318e-4253-9e36-4702f7bac346-w8j1e7.png",
+      name: "Centro de Exposições",
+      slug: "centro-de-exposicoes",
+    },
   ];
 
   // Criar categorias no banco de dados
@@ -376,21 +381,21 @@ async function main() {
     },
 
     // Parque de Exposições
-    // {
-    //   name: "Parque de Exposição de Paragominas - Amilcar Tocantins",
-    //   slug: "parque-de-exposicoes-amilcar-tocantis",
-    //   description:
-    //     "O Instituto Brasileiro de Geografia e Estatística - IBGE se constitui no principal provedor de dados e informações do País, que atendem às necessidades dos mais diversos segmentos da sociedade civil, bem como dos órgãos das esferas governamentais federal, estadual e municipal.",
-    //   operation: "08h - 17h",
-    //   imageUrl:
-    //     "https://utfs.io/f/d9f828c5-df83-4f3a-a31e-49aea762607a-5znpy9.jpeg",
-    //   address: "PA-125, S/N - CX Postal 036 - LT Módulo I - Centro",
-    //   mapsUrl: ["https://maps.app.goo.gl/8P2K78LdibwxBUaf8"],
-    //   phones: ["(91) 3729-5528"],
-    //   categories: {
-    //     connect: [{ name: "Órgãos Públicos" }],
-    //   },
-    // },
+    {
+      name: "Parque de Exposição de Paragominas - Amilcar Tocantins",
+      slug: "parque-de-exposicoes-amilcar-tocantis",
+      description:
+        "Parque de exposições conhecido por sediar uma das maiores feiras agropecurárias do norte e diversos tipos de eventos e festivais.",
+      operation: "08h - 17h",
+      imageUrl:
+        "https://utfs.io/f/d9f828c5-df83-4f3a-a31e-49aea762607a-5znpy9.jpeg",
+      address: "PA-125, S/N - CX Postal 036 - LT Módulo I - Centro",
+      mapsUrl: ["https://maps.app.goo.gl/8P2K78LdibwxBUaf8"],
+      phones: ["(91) 3729-5528"],
+      categories: {
+        connect: [{ name: "Centro de Exposições" }],
+      },
+    },
   ];
 
   // Criar estabelecimentos no banco de dados
